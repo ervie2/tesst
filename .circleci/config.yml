@@ -14,7 +14,7 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run: apt-get --allow install util-linux
+      - run: apt -y install util-linux
       - run: lscpu
 
 # Invoke jobs via workflows
